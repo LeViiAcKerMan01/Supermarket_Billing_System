@@ -120,7 +120,7 @@ void printBill(){
             cin >> quant;
 
             ifstream in("C:/Users/priya/Documents/SBS/bill.txt");
-            ofstream out("C:/Users/priya/Documents/SBS/bill.txt");
+            ofstream out("C:/Users/priya/Documents/SBS/bill temp.txt");
 
             string line;
             bool found = false;
@@ -169,7 +169,7 @@ void printBill(){
 
             }
             if(choice == 2){
-
+                
                 close = true;
                 cout<<"\tCounting Total Bill"<<endl;
             }
@@ -179,9 +179,9 @@ void printBill(){
         cout<<endl<<endl;
         cout<<"\tTotal Bill ---------------------------- : "<<count<<endl<<endl;
         cout<<"\tThanks for Shopping!"<<endl;
+        Sleep(5000);
     }
 }
-
 int main(){
 
     Bill b;
